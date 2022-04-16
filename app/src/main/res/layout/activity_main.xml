@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <android.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:title="MENU"
+        android:layout_marginBottom="2dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Drinks "
+        android:padding="10dp"/>
+
+    <Spinner
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="15dp"
+        android:popupBackground="@android:drawable/btn_dropdown"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="submit"
+        android:onClick="btnSubmit_Click"
+
+        />
+    <EditText
+        android:id="@+id/textArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="150dp"
+        android:gravity="top"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
